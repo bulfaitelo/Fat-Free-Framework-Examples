@@ -8,7 +8,7 @@ class webPage {
 	}
 }
 class user {
-	public static function greet($f3, $args){ // $args são to dipo Vetor
+	public static function greet($args){ // $args são to dipo Vetor
 		echo "Olá ".$args['name'];
 	}
 }
@@ -46,6 +46,6 @@ class user {
 <a href="home">home</a><br>
 <a href="about">about</a><br>
 <a href="aboutObject">aboutObject</a><br>
-<a href="hello/Pessoinha legal">hello/ Pessoinha Legal</a><br>
+<a href="hello/PessoinhaLegal">hello/ Pessoinha Legal</a><br>
 </body>
 </html>
