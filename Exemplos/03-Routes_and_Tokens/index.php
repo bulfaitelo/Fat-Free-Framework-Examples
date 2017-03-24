@@ -2,33 +2,19 @@
 // FRAMEWORK F3
 $f3 = require('../../lib/base.php');
 
-class webPage {
-	function display(){
-		echo "Eu não posso instanciar a um objeto";
-	}
-}
 
-// 02-About
-	// HOME
-	$f3->route('GET /', 
-	    function() {
-	        echo 'Hello, world!';
-	    }
-	);
-	// reroute para home /
-	$f3->route('GET /home', 
-	    function($f3) {
-	        $f3->reroute('/');
-	    }
-	);
-	// About
-	$f3->route('GET /about',
-		function() {
-			echo "estamos exibindo o About";
-		}
-	);
-	$f3->route('GET /aboutObject','webPage->display');
-	$f3->run();
+// 02-Routes_and_Tokens,
+$f3->route('GET /',
+    function() {
+        echo 'Cervejas!!!';
+    }
+);
+$f3->route('GET /brew/@count',
+	function($f3){
+		echo $f3->get('PARAMS.count').' garrafas de cerveja no balde!';
+	}
+);
+$f3->run();
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,8 +23,6 @@ class webPage {
 </head>
 <body>
 <br><br>
-<a href="home">home</a><br>
-<a href="about">about</a><br>
-<a href="aboutObject">aboutObject</a><br>
+<a href="brew/99">99 garrafas </a><br>
 </body>
 </html>
