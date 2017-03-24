@@ -7,11 +7,6 @@ class webPage {
 		echo "Eu não posso instanciar a um objeto";
 	}
 }
-class user {
-	public static function greet($f3, $args){ // $args são to dipo Vetor
-		echo "Olá ".$args['name'];
-	}
-}
 
 // 02-About
 	// HOME
@@ -33,7 +28,6 @@ class user {
 		}
 	);
 	$f3->route('GET /aboutObject','webPage->display');
-	$f3->route('GET /hello/@name', 'user::greet');
 	$f3->run();
 ?>
 <!DOCTYPE html>
@@ -46,6 +40,5 @@ class user {
 <a href="home">home</a><br>
 <a href="about">about</a><br>
 <a href="aboutObject">aboutObject</a><br>
-<a href="hello/Pessoinha legal">hello/ Pessoinha Legal</a><br>
 </body>
 </html>
