@@ -20,7 +20,7 @@ class user {
 	        echo 'Hello, world!';
 	    }
 	);
-	// reroute para home /
+	// reroute para home / (Ganbiarra)
 	$f3->route('GET /home', 
 	    function($f3) {
 	        $f3->reroute('/');
