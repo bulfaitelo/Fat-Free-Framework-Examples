@@ -16,7 +16,7 @@ $f3->route('GET /reroute',
 	}
 );
 $f3->route('GET @beer_list: /beer', 'Beer->list');
-
+// test commit and update
 $f3->run();
 ?>
 <!DOCTYPE html>
