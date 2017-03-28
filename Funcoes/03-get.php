@@ -17,7 +17,7 @@ echo  $f3->get('myVar'); // imprime Olá Mundo
 $local_var = $f3->get('myVar');
 echo "\$local_var: ";
 echo $local_var;
-echo "<pre>";
+echo "</pre>";
 
 $timestamp1=strtotime('28-03-2017');
 $timestamp2=strtotime('29-03-2017');
@@ -34,7 +34,7 @@ echo "<b>\$f3->set('var2','Saída: {0,date} - Chegada: {1, date} e uma outra dat
 echo $f3->get('var2', array($timestamp1, $timestamp2, $timestamp3)); // Forma abreviada de $f3->format($f3->get('var2'),$timestamp1,$timestamp2);
 echo "<br><b>Forma abreviada de \$f3->format($f3->get('var2'),\$timestamp1,\$timestamp2, \$timestamp3);</b><br>";
 echo $f3->format($f3->get('var2'),$timestamp1,$timestamp2, $timestamp3);
-
+echo "</pre>";
 // Vetores:
 
 $f3->set('myarray',
@@ -54,11 +54,11 @@ echo $f3->get('myarray.1'); // value_1
 echo "<b> <br>\$f3->get('myarray.bar'): </b>";
 echo $f3->get('myarray.bar'); // 123
 echo "<b> <br>\$f3->get('myarray[\"foo\"]'): </b>";
-echo $f3->get('myarray["foo"]'); // we like candy
+echo $f3->get('myarray["foo"]'); // Eu to com fome!
 echo "<b> <br>\$f3->get('myarray[baz]'): </b>";
-echo $f3->get('myarray[baz]'); // 4.56, notice alternate use of single, double and no quotes
+echo $f3->get('myarray[baz]'); // 4.56, Aviso uso alternativo simples e sem aspas duplas;
 echo "<b> <br>\$f3->myarray['foo']: </b>";
 echo $f3->myarray['foo']; 
 echo "<b> <br>\$f3['myarray']['baz']: </b>";
 echo $f3['myarray']['baz'];
-
+echo "</pre>";
