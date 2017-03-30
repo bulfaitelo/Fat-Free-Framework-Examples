@@ -8,6 +8,5 @@ $f3 = require('../lib/base.php');
 
 $elementos = array('agua', 'terra', 'vento', 'fogo');
 echo "<pre>";
-echo ($f3->csv($elementos)); 
+echo ($f3->csv($elementos)); //'agua','terra','vento','fogo'
 echo "</pre>";
-
