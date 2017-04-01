@@ -39,7 +39,6 @@ $f3->set('os_livros',
 		'one 	{O livro está sobre a mesa},'.
 		'two 	{Dois (#) livros sobre a mesa},'.
 		'other 	{Existem # livros sobre a mesa (que mesa grande não?)},'.
-
 	'}'
 );
 
