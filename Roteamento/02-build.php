@@ -26,3 +26,4 @@ echo $f3->build('/resize/@format/*/sep/*',array(
   2=>'foo/bar',
   3=>'baz.gif'
 ));
+
